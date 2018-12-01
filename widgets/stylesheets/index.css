@@ -1,0 +1,32 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 2%;
+}
+
+h2 {
+  color: white;  /* Fallback: assume this color ON TOP of image */
+  font-size: 220px;
+  background: url('https://media.giphy.com/media/PqKtdLXZYCJ4A/giphy.gif');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button.title {
+  margin: 10px;
+  padding: 10px;
+}
+
+.tabs p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.tabsContainer {
+  /* background-color: white; */
+}
