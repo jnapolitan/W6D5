@@ -11,22 +11,66 @@ body {
 
 h2 {
   color: white;  /* Fallback: assume this color ON TOP of image */
-  font-size: 220px;
+  font-size: 200px;
   background: url('https://media.giphy.com/media/PqKtdLXZYCJ4A/giphy.gif');
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
 button.title {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
+}
+
+.tabs {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: gradChange 10s ease infinite;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+@-webkit-keyframes gradChange {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .tabs p {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 15px;
+  height: 100px;
+  margin: -5px auto;
+  line-height: 30px;
+  width: 25%;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 .tabsContainer {
-  /* background-color: white; */
+  background-color: #999;
+  color: white;
+}
+
+.tabsContainer button {
+  color: white;
+  background: black;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 4px solid transparent;
+}
+
+button:hover {
+  color: black;
+  background: gold;
+  border: 4px solid black;
 }
